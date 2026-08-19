@@ -8,8 +8,8 @@ int main() {
     pid_t pid;
     
     printf("PID do processo atual: %d\n", getpid());
-    
     pid = fork();
+    
     if (pid < 0) { /*Ocorrência de erro*/
         exit(-1);
     }
@@ -17,7 +17,7 @@ int main() {
         sleep(1); /*Processo pai ganha 1s de "vantagem"*/
         printf("Processo FILHO iniciado\n");
         printf("Processo FILHO - Valor de pid retornado: %d\n", pid);
-        printf("processo FILHO - PID: %d, ParentPID (PID processo PAI): %d\n", getpid(), getppid());
+        printf("processo FILHO - PID: %d, Parent PID (PID processo PAI): %d\n", getpid(), getppid());
         printf("Fim do processo FILHO\n");
     }
     else { /*Processo pai*/
