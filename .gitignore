@@ -1,0 +1,24 @@
+# Executáveis compilados
+criacao_de_processo/criacao_de_processo
+*.out
+*.exe
+
+# Arquivos de objetos
+*.o
+*.obj
+*.a
+*.so
+
+# Arquivos de debug
+*.gdb
+*.dSYM/
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Compilação
+build/
+dist/
