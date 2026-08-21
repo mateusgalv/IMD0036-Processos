@@ -19,6 +19,7 @@ int main() {
         printf("Processo FILHO - Valor de pid retornado: %d\n", pid);
         printf("processo FILHO - PID: %d, Parent PID (PID processo PAI): %d\n", getpid(), getppid());
         printf("Fim do processo FILHO\n");
+        exit(0);
     }
     else { /*Processo pai*/
         printf("Processo PAI iniciado\n");
